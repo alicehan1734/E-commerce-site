@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bill.css">
+    <script src="saveandchange.js"></script>
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+
+</head>
+<body>
+    <h3>배송지 등록하기</h3>
+    <form method="post" action="saveandchange.php" id="shippingform">
+
+    <table id = "shippingbody">
+        <tbody>
+            <tr><td>받으시는 분 *</td><th><input type="text" id="customer_name" name="customer_name" style='width:10em' data-name="받으시는 분"></th></tr>
+            <tr><td>주소 *</td><th><div>
+                <input type="text" placeholder="우편번호" id="sample6_postcode" name="sample6_postcode" data-name="우편번호">
+                <a onclick="sample6_execDaumPostcode()" class="minibutton">우편번호찾기</a> </div>
+                <div><input type="text" placeholder="주소" id="sample6_address" name="sample6_address" data-name="주소"></div>
+            <div><input type="text" placeholder="상세주소" id="sample6_detailAddress" name="sample6_detailAddress" data-name="상세주소"></div>
+            </th></tr>
+            <tr><td >휴대전화 *</td><th>
+            <input maxlength="13" type="text" style='width:10em' data-name="휴대전화" id="phone1" name="phone1" ></th></tr>
+            <tr><td>이메일 *</td><th><input type="text" id="customer_email" name="customer_email" data-name="이메일"></th></tr>
+            <tr><td>배송메시지</td><th><input type="text" data-name="배송메시지"  id="shippingmessage" name="shippingmessage"></th></tr>
+        </tbody>
+    </table>
+
+</form>
+
+    <a onclick="back();" class="minibutton">Back</a>
+    <a onclick="save();" class="minibutton">저장하기</a>
+
+</body>
+
+</html>

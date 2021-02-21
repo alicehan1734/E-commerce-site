@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+.order {
+  background-color: whitesmoke;
+  font-family: "Nanum Gothic";
+}
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  background-color: #21633a;
+  color: white;
+}
+
+#purchase {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#purchase td,
+#purchase th {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+#purchase tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#purchase th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  background-color: gray;
+  color: white;
+}
+
+#purchase td {
+  background-color: white;
+  text-align: center;
+}
+
+#shippingbody td {
+  background-color: pink;
+  text-align: left;
+}
+
+#shippingbody th {
+  background-color: whitesmoke;
+  text-align: left;
+}
+
+#shippingbody {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#shippingbody td,
+#shippingbody th {
+  border: 1px solid rgb(63, 63, 63);
+  padding: 5px;
+}
+
+.minibutton {
+  border: none;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.minibutton:hover {
+  background-color: rgb(238, 43, 76);
+  color: white;
+}
+
+.minidelete {
+  border: none;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: rgb(175, 162, 201);
+  color: black;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.minidelete:hover {
+  background-color: rgb(61, 57, 181);
+  color: white;
+}
+
+input[type="text"],
+select {
+  width: 70%;
+  padding: 8px 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.miniselect {
+  width: 100px;
+  padding: 8px 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  border: 3px solid rgb(238, 43, 76);
+}
+
+.buttonmain {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 100px;
+}
+
+.button4 {
+  background-color: rgb(73, 73, 73);
+  color: white;
+  border: 2px solid black;
+}
+
+.button4:hover {
+  background-color: white;
+  color: black;
+}
+
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  text-align: right;
+  text-decoration: none;
+  padding: 20px;
+  box-sizing: border-box;
+  background: whitesmoke;
+  display: none;
+  transition: all 0.5s;
+}
+
+.popup a {
+  color: grey;
+  text-decoration: none;
+}
+
+.popup:target {
+  display: inline;
+}
+
+.popup:target + .dim {
+  opacity: 1;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap");
+
+        .eveyone {
+            font-family: "Gothic A1", sans-serif;
+
+        }
+        #tablehere td{
+            padding: 10px;
+
+        }
+        input[type=password] {
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=password]:focus {
+  border: 3px solid #555;
+}
+
+.button {
+  background-color: #dddbdb; /* Green */
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover{
+    background-color: #838383; /* Green */
+    color: rgb(255, 255, 255);
+
+}
+    </style>
+</head>
+<body>
+<script>
+    start();
+</script>
+    <div class="eveyone">
+        <h2>회원정보 확인</h2>
+        <h4>님의 정보를 안전하게 보호하기 위해 비밀번호를 다시 한번 확인합니다.</h4>
+        <div>
+            <table class="table table-fluid" id="myTable"  style="text-align: center; padding-left: 200px; ">
+            <tbody id="tablehere">
+            <tr>
+                <td>아이디</td>
+                <td>아이디</td>
+
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" placeholder="비밀번호" id="password" name="password"></td>
+            </tr>
+            <tr>
+<td>      
+</td>
+<td>        <button class="button button2">확인</button>
+</td>
+            </tr>
+            </tbody>
+
+        </div>
+
+    </div>
+    <div>
+    </div>
+
+</body>
+</html>

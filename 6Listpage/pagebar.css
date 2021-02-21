@@ -1,0 +1,26 @@
+.navigationbar {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.navigationbar li {
+  list-style: none;
+  line-height: 50px;
+
+  margin: 0 5px;
+  display: flex;
+}
+
+.navigationbar li .pagenumber {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.navigationbar li:hover {
+  background: #333;
+  color: #fff;
+  cursor: grab;
+}

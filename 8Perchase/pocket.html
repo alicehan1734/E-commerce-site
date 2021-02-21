@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap"
+        rel="stylesheet">
+    <script src="pocket.js"></script>
+    <script src="header.js"></script>
+    <link rel="stylesheet" href="../1mainpage/mainpage.css">
+
+    <link rel="stylesheet" href="pocket.css">
+
+</head>
+<body>
+    <script>
+        checksession(); // 세션체크 
+        hoisted();
+
+    </script>
+<script>
+</script>
+
+<div class="lst" id="1st">
+    <nav class="navbar 1st">
+        <!-- 메뉴에 있는 바를 알려주기위해서 -->
+        <ul class="navbar_menu">
+            <li>
+                <!-- 리스트 내용들이 들어가 있다 -->
+                <a href="../2Login/loginpage.html">LOGIN</a>
+            </li>
+            <li>
+                <a href="../4Signup/signup.html">JOIN US</a>
+            </li>
+        </ul>
+
+    </nav>
+</div>
+<!-- 세션값이 만약 있다면 -->
+<div class="2nd" id="2nd">
+
+    <nav class="navbar 2nd">
+        <!-- 메뉴에 있는 바를 알려주기위해서 -->
+        <ul class="navbar_menu">
+            <li>
+                <!-- 리스트 내용들이 들어가 있다 -->
+                <a href="#" id="2ndname"></a>
+
+            </li>
+            <li>
+                <a href="../3Logout/logout.php">LOGOUT</a>
+            </li>
+            <li>
+                <a href="../8Perchase/pocket.html">CART</a>
+            </li>
+
+            <li>
+                <a href="../9MyPage/Mypagefirst.php?menu=1">MY PAGE</a>
+            </li>
+        </ul>
+
+    </nav>
+</div>
+<!-- 세션값이 만약 있다면 -->
+<div class="3rd" id="3rd">
+
+    <nav class="navbar 3rd">
+        <!-- 메뉴에 있는 바를 알려주기위해서 -->
+
+        <ul class="navbar_menu">
+
+        <li>
+            <a href="">관리자</a>
+        </li>
+        <li>
+            <!-- 리스트 내용들이 들어가 있다 -->
+            <a href="../7MakeItem/Admin.html">Make Item List</a>
+        </li>
+        <li>
+            <a href="../3Logout/logout.php">LOGOUT</a>
+        </li>
+        <li>
+            <a href="../6Listpage/NoticeList.php?page=1">Notice</a>
+        </li>
+    </ul>
+
+</nav>
+
+</div>
+
+
+<div class="logo">
+<!-- 로고 -->
+<a href="../1mainpage/mainpage2.html">
+    <img src="../logoimage/logo.png" alt="로고" width="200px"></a>
+</div>
+
+<div class="main_manu_bar">
+<ul class="navbar_menu_case">
+    <!-- 케이스에 대한 정보들 -->
+
+    <li>
+        <a href="../6Listpage/Listpage.php?menu=1">하드 케이스</a>
+    </li>
+    <li>
+        <a href="../6Listpage/Listpage.php?menu=2">젤리 케이스</a>
+    </li>
+    <li>
+        <a href="../6Listpage/Listpage.php?menu=3">투명 하드 케이스</a>
+    </li>
+    <li>
+        <a href="../6Listpage/Listpage.php?menu=4">슬라이드 케이스</a>
+    </li>
+    <li>
+        <a href="../6Listpage/Listpage.php?menu=5">아쿠아 케이스</a>
+    </li>
+
+    <li>
+        <div class="dropdown">
+
+        <a href="">자료실</a>
+        <div class="dropdown-content"  class="dropbtn">
+            <a href="../6Listpage/NoticeList.php?page=1">Notice</a>
+            <a href="../nodevue/room.html">CHAT</a>
+</div>
+        </div>
+
+    </li>
+</ul>
+
+</div>
+<div class="pocket" style="padding: 30px;">
+    <div style="padding-bottom: 30px;">
+    <span>나의 장바구니</span>
+    <span id="nickname" ></span>
+</div>
+    <div class="pocketable" style="padding-bottom: 30px;">
+        <table id="customers">
+            <thread>
+
+            <tr>
+              <th><input type="checkbox"  id="button_allcheck" onclick="allcheck(this)" ></th>
+              <th>이미지</th>
+              <th>주문상품정보</th>
+              <th>수량</th>
+              <th>가격 (원)</th>
+              <th>삭제</th>
+            </tr>
+        </thread>
+
+        <tbody id="tbody" name="tbody"></tbody>
+
+
+          </table>
+    </div>
+
+    <div style="text-align: center;" id="basketempty">
+        <img src="https://cdn1.iconfinder.com/data/icons/youtuber/256/box-empty-play-button-video-256.png" style="width: 150px; height: 150px;">
+        <h4>장바구니가 비어 있습니다.</h4>
+    </div>
+
+    <div class="perchase">
+        <table id="purchase">
+            <thread>
+
+            <tr>
+              <th>총 상품금액</th>
+              <th>총 배송비</th>
+              <th>결제 예상금액</th>
+            </tr>
+            </thread>
+
+            <tbody id="tbody" name="tbody">
+
+                <td id="amount"></td>
+                <td id="shippingamount"></td>
+                <td id="totalamount"></td>
+
+            </tbody>
+
+          </table>
+<spam style="padding: 10px;">* 총 상품금액 3만원 이상시 배송비는 0원입니다.</spam>
+    </div>
+
+    <div class="buttondiv">
+       <!--<button class="buttonmain button4" onclick="directbuy();">전체상품 주문하기</button>--> 
+        <button class="buttonmain button5" onclick="choosebuy();">상품 주문하기</button>
+    </div>
+</div>
+
+</body>
+</html>

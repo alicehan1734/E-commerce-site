@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="CreatList.css">
+        <script src="CreatList.js"></script>
+        <script src="ckeditor/ckeditor.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <input style="width: 150px " type="button" value="재설정" onclick="deletelist();">
+
+        <form method="post" action="CreateList.php" id="form" name="formcreate"  enctype="multipart/form-data">
+
+            <label for="casename">케이스 이름*</label>
+            <input type="text" id="casename" name="casename" placeholder="케이스 이름을 입력하세요..">
+            <!-- 케이스 이름을 넣는구간 -->
+
+            <label for="type">케이스 종류*</label>
+            <!-- 케이스 종류 넣는구간 -->
+            <select id="type" name="type">
+                <option value="하드 케이스">하드 케이스</option>
+                <option value="젤리 케이스">젤리 케이스</option>
+                <option value="usa">투명 하드 케이스</option>
+                <option value="슬라이드 케이스">슬라이드 케이스</option>
+                <option value="아쿠아 케이스">아쿠아 케이스</option>
+            </select>
+
+            <label for="price">판매가*</label>
+            <!-- 판매가격 넣는구간 -->
+            <input type="number" id="price" name="price" placeholder="판매가격을 입력하세요.."></input>
+
+            <label for="saleprice">할인 판매가*</label>
+            <!-- 할인 판매가격 넣는 구간 -->
+            <input
+                type="number"
+                id="saleprice"
+                name="saleprice"
+                onkeyup="checkamouont(this.value)"
+                placeholder="할인 판매가격을 입력하세요.. (실질적으로 고객님이 사시는 가격입니다.)">
+
+            <div class="titleforcase">케이스 색 및 기종 선택</div>
+            <!-- 케이스 종류 폼 -->
+
+            <div class="colorandtype">
+                <div class="case">
+                    <label for="color">케이스 색</label>
+                    <!-- 케이스 색 넣는 구간 -->
+                    <select id="color" name="color">
+                        <option value="빨강">빨강</option>
+                        <option value="주황">주황</option>
+                        <option value="노랑">노랑</option>
+                        <option value="초록">초록</option>
+                        <option value="파랑">파랑</option>
+                        <option value="남색">남색</option>
+                        <option value="보라">보라</option>
+                        <option value="검정">검정</option>
+                        <option value="하양">하양</option>
+                        <option value="투명">투명</option>
+                    </select>
+
+                    <label for="typecase">기종</label>
+                    <!-- 케이스 종류 넣는 구간 -->
+                    <select id="typecase" name="typecase">
+                        <option value="아이폰6(s)">아이폰6(s)</option>
+                        <option value="아이폰7/8/SE2">아이폰7/8/SE2</option>
+                        <option value="아이폰XS">아이폰XS</option>
+                        <option value="아이폰XR">아이폰XR</option>
+                        <option value="아이폰XS MAX">아이폰XS MAX</option>
+                        <option value="아이폰11">아이폰11</option>
+                        <option value="아이폰11프로">아이폰11프로</option>
+                        <option value="아이폰11 프로맥스">아이폰11 프로맥스</option>
+                        <option value="갤럭시 S10 5G">갤럭시 S10 5G</option>
+                        <option value="갤럭시 노트 8">갤럭시 노트 8</option>
+                        <option value="갤럭시 노트9">갤럭시 노트9</option>
+                        <option value="갤럭시 노트10">갤럭시 노트10</option>
+                        <option value="갤럭시 노트10+">갤럭시 노트10+</option>
+
+                    </select>
+                    <label for="caseqty">수량</label>
+                    <!-- 수량 들 넣는 구간 -->
+                    <input type="number" id="caseqty" name="caseqty" placeholder="수량을 입력하세요..">
+
+                </div>
+                <button onclick="addItem()" type="button">추가하기</button>
+                <!-- 케이스 색 및 기종 선택 란의 추가하기 버튼-->
+                <table id="table">
+                    <!-- 테이블 형식으로 넣는 부분 -->
+                    <thread>
+                        <tr>
+                            <th>색깔</th>
+                            <th>케이스기종</th>
+                            <th>수량</th>
+                            <th>지우기</th>
+                        </tr>
+
+                    </thread>
+                    <tbody id="tbody" name="tbody"></tbody>
+                </table>
+
+            </div>
+            <div >내용</div>
+            <!-- 케이스 종류 폼 -->
+            <textarea name="editor" id="editor"></textarea>
+            <script>
+                CKEDITOR.replace('editor', {
+                    filebrowserUploadUrl: 'http://192.168.233.131/7MakeItem/ckeditor/ck_upload.php',
+                    filebrowserUploadMethod: 'form'
+                    
+                })
+            </script>
+
+            <input type="text" style="display: none;" class="listtype" id="listtype" name="listtype" >
+            <input type="text"  style="display: none;" class="listtype" id="checkcheck" name="checkcheck" >
+
+            <div class="imagelist">
+                <span >사진 추가하기</span>
+                <!-- 케이스 종류 폼 -->
+                <label class="btn btnimage" for="files[]" style="cursor:pointer;"> <!-- 이미지 추가 버튼 -->
+                    이미지 선택버튼
+                    <input multiple type="file" id="files[]" name="files[]" onchange="imagefun();">
+                </label>
+                <label class="btn" for="deleteimage" style="cursor:pointer;"> <!-- 이미지 삭제버튼 -->
+                    이미지 전체삭제
+                    <input type="button" id="deleteimage" onclick="imagedelete()">
+                </label>
+                <input style="display: none ;"type="text" class="checkimagedelete" id="checkimagedelete" name="checkimagedelete">
+
+                <div class="row" id="myImg" name="myImg">
+                    <!-- 이미지 갯수 -->
+                    </div>
+
+            </div>
+                <input class="makelist" type="button" value="리스트 만들기" onclick="submit_1();">
+                <!-- 최종 submit 부분 -->   
+            </form>
+            
+        </body>
+    </html>

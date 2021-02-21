@@ -1,0 +1,115 @@
+input[type="text"],
+select {
+  width: 100%;
+  padding: 5px 5px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 5px 5px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="button"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.colorandtype {
+  display: flex; /* 옆으로 움직이기 위한 요소 */
+  position: relative;
+}
+
+.case {
+  width: 500px;
+}
+
+#table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 500px;
+  margin-left: 50px;
+  text-align: center;
+}
+
+#table td,
+#table th {
+  border: 1px solid #ddd;
+}
+
+#table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table tr:hover {
+  background-color: #ddd;
+}
+
+#table th {
+  text-align: left;
+  background-color: gray;
+  color: white;
+}
+
+label input[type="file"] {
+  display: none;
+}
+
+label input[type="button"] {
+  display: none;
+}
+
+.btn {
+  background-color: gray;
+  color: white;
+  padding: 5px 5px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+}
+
+.row {
+  display: flex; /* 옆으로 움직이기 위한 요소 */
+  position: relative;
+}
+
+.image {
+  display: flex; /* 옆으로 움직이기 위한 요소 */
+  position: relative;
+}
+
+.makelist {
+  padding-top: 500px;
+}
+
+.imagelist input[type="text"] {
+  display: none;
+}
+
+.listtype {
+  display: none;
+}

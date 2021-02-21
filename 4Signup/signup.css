@@ -1,0 +1,67 @@
+#signup_text {
+  padding: 0px 0px 0px 50px;
+}
+
+.check * {
+  display: inline;
+}
+
+.signup {
+  background: whitesmoke;
+  padding-left: 20%;
+}
+
+.check {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.idname {
+  width: 200px;
+  float: left;
+}
+
+.box {
+  width: 80%;
+  height: 140px;
+  overflow: auto;
+  text-align: center;
+  background: whitesmoke;
+  margin: 10px;
+  padding: 20px;
+}
+
+.confirm {
+  padding-left: 20%;
+}
+
+.box::-webkit-scrollbar {
+  /* ::webkit-scrollbar : 스크롤바 전체    */
+  width: 10px;
+}
+.box::-webkit-scrollbar-thumb {
+  /* :webkit-scrollbar-thumb : 스크롤 막대    */
+  background-color: #2f3542;
+}
+.box::-webkit-scrollbar-track {
+  /*::webkit-scrollbar-track : 스크롤 막대 외부   */
+  background-color: grey;
+}
+
+.signup_button {
+  background-color: palevioletred;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.button_signup {
+  text-align: center;
+}

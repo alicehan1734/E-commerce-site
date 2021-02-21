@@ -1,0 +1,19 @@
+.btn-group .button {
+  background-color: #ecdff1; /* Green */
+  border: 1px solid green;
+  color: rgb(20, 20, 20);
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-group .button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #dfdfdf;
+}

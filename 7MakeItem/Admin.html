@@ -1,0 +1,40 @@
+<!DOCTYPE html> <!-- administration 을 활수있는 공간이다. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Admin.css">
+        <script src="Admin.js"></script>
+        <title>Document</title>
+
+    </head>
+    <body>
+        <script>
+            check(); // 관리자 인지 아닌지 확인하는 부분 
+        </script>
+
+        <div class="wrapper">
+            <div class="sidebar"> <!-- 옆에 있는 메뉴바-->
+
+                <a href="../7MakeItem/Admin.html""><image src="http://192.168.233.131/logoimage/logo.png" width="100px"></image></a>
+                <ul>
+                    <li style="cursor:pointer;"  onclick="callFunction('1');"><a>물건리스트 관리</a></li><!-- 취소건수 포함하여 물건 리스트 수정도 할수있다. -->
+                    <li style="cursor:pointer;" onclick="callFunction('2');"><a >물건리스트 만들기</a></li> <!-- 물건 리스트 만들수 있는곳 -->
+                    <li style="cursor:pointer;" onclick="callFunction('3'); "><a >주문서 보기</a></li><!-- 현금영수증은 물론, 결제 현황 확인 가능 -->
+                    <!--<li style="cursor:pointer;" onclick="callFunction('4');"> <a>운영관리(질문)</a></li> <!-- 질문리스트를 답변해줄수있는 공간 -->
+                    <!--<li style="cursor:pointer;"  onclick="callFunction('5');"> <a>매출관리</a> </li>--><!-- 매출 현황을 표로 보여줄수있다. 현재 몇개씩 팔리고 있는지 리스트 보여주기. -->
+                </ul>
+
+                <div class="home">
+                    <a href="../1mainpage/mainpage2.html">메인화면으로..</a>
+                </div>
+            </div>
+
+            <div class="main_content"> <!-- 오른쪽에 있는 메인바-->
+                <div class="header" id="header">간편하게 쇼핑몰을 운영할 수 있는 관리페이지 입니다.</div>
+                <div class="info"  id="main_content">
+                    <image src="gif2.gif">
+                </div>
+            </div>
+        </body>
+    </html>

@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+.main {
+  background-color: #f2f2f2;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.mainpage {
+  padding: 30px;
+  position: relative;
+  display: flex;
+  margin-left: 15%;
+}
+
+.information {
+  padding: 30px;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.square:active {
+  border: 2px black solid;
+  border-radius: 10px;
+}
+
+.square:hover {
+  border: 2px black solid;
+}
+
+select {
+  width: 100%;
+  padding: 5px 5px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#table {
+  border-collapse: collapse;
+  width: 500px;
+  margin-left: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#table td,
+#table th {
+  border: 1px solid #ddd;
+}
+
+#table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table th {
+  text-align: left;
+  background-color: white;
+  color: gray;
+  font-size: 15px;
+}
+
+.info {
+  text-align: center;
+}
+
+.info_case li {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  /* 한줄에 하나씩 나오도록 할수있게 한다. */
+  list-style: none;
+  /*리스트의 점을 없애주기 위해서 */
+  text-align: center;
+  display: inline;
+}
+
+.info_case a {
+  color: gray;
+  text-decoration: none;
+  /*밑줄을 없애고 싶으면 */
+  padding: 14px 16px;
+}
+
+.info_case li:hover {
+  /* 메뉴에 있는 리스트 가 hover 되었을때 */
+  /* 배경 색깔 바꿔준다. */
+  border-radius: 4px;
+  /* 모서리가 둥글게 만들기위해  */
+  background-color: white;
+}
+
+.info_case a:hover {
+  color: black;
+  /*밑줄을 없애고 싶으면 */
+}
+
+.info_case {
+  margin: auto;
+  display: flex;
+  /* 한줄에 하나씩 나오도록 할수있게 한다. */
+  list-style: none;
+  /*리스트의 점을 없애주기 위해서 */
+  text-align: center;
+  margin-left: 35%;
+}
+
+.perchase_detail {
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 20px;
+  border: 2px black solid;
+}
+
+input {
+  display: none;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.button span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  background: #eeeeee;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: ease 0.3s;
+}
+
+.button span:hover {
+  padding: 4px;
+}
+.red .button span {
+  background: #df0700;
+}
+
+.orange .button span {
+  background: #ff5722;
+}
+
+.yellow .button span {
+  background: #ffc107;
+}
+
+.green .button span {
+  background: #019155;
+}
+
+.blue .button span {
+  background: #2196f3;
+}
+
+.indigo .button span {
+  background: #3f51b5;
+}
+
+.purple .button span {
+  background: #6700c7;
+}
+
+.black .button span {
+  background: #000000;
+}
+
+.white .button span {
+  background: #ffffff;
+}
+
+.trans .button span {
+  background: #b9b9b9;
+}
+
+.layer {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  /*transition: ease .3s;*/
+  z-index: -1;
+}
+
+table td {
+  text-align: left;
+  width: 150px;
+}
+
+.checkcolorname {
+  border: 1px solid gray;
+  background: #fcfdd0;
+  padding-left: 10px;
+  width: fit-content;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 10px;
+}
+
+.buttonmain {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+.button4:hover {
+  background-color: #e7e7e7;
+}
+
+.button5 {
+  background-color: #555555;
+  color: white;
+}
+
+.button5:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.buttondiv {
+  margin-left: 40%;
+}

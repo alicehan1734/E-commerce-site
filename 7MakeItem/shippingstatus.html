@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="shippingstatus.js"></script>
+    <link rel="stylesheet" href="shipping.css">
+
+    <title>Document</title>
+    <style>
+        .customers {
+  border-collapse: collapse;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.customers td,
+.customers th {
+  border: 1px solid rgb(59, 59, 59);
+  padding: 5px;
+  background: whitesmoke;
+}
+
+
+
+    </style>
+</head>
+<body>
+  <h2 id="dfdfd">주문서번호: </h2>
+    <div id="status">
+
+
+
+    </div>
+    <div class="btn-group">
+      <h4>배송상태 변경버튼</h4>
+
+      <button class="button" onclick="change('prepared')">상품준비중 처리</button>
+      <button class="button" onclick="change('shipping')">배송중 처리</button>
+      <button class="button" onclick="change('finished')">배송완료 처리</button>
+    </div>
+    <div class="mainlist" style="float: none;  margin-left: 30px; width: 100%;" id="mainlist">
+
+
+
+    </div>
+</body>
+</html>

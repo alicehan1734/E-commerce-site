@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap"
+        rel="stylesheet">
+    <!-- 폰트링크 첨부-->
+    <link rel="stylesheet" href="../1mainpage/mainpage.css">
+    <!-- css 초기에 선언하기 위해서 -->
+    <script src="header.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+        rel="stylesheet">
+
+</head>
+<body>
+    <script>
+        hoisted();
+    </script>
+    <div class="lst" id="1st">
+        <nav class="navbar 1st">
+            <!-- 메뉴에 있는 바를 알려주기위해서 -->
+            <ul class="navbar_menu">
+                <li>
+                    <!-- 리스트 내용들이 들어가 있다 -->
+                    <a href="../2Login/loginpage.html">LOGIN</a>
+                </li>
+                <li>
+                    <a href="../4Signup/signup.html">JOIN US</a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+    <!-- 세션값이 만약 있다면 -->
+    <div class="2nd" id="2nd">
+
+        <nav class="navbar 2nd">
+            <!-- 메뉴에 있는 바를 알려주기위해서 -->
+            <ul class="navbar_menu">
+                <li>
+                    <!-- 리스트 내용들이 들어가 있다 -->
+                    <a href="#" id="2ndname"></a>
+
+                </li>
+                <li>
+                    <a href="../3Logout/logout.php">LOGOUT</a>
+                </li>
+                <li>
+                    <a href="/8Perchase/pocket.html">CART</a>
+                </li>
+                <li>
+                    <a href="../9MyPage/Mypagefirst.php?menu=1">MY PAGE</a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+    <!-- 세션값이 만약 있다면 -->
+    <div class="3rd" id="3rd">
+
+        <nav class="navbar 3rd">
+            <!-- 메뉴에 있는 바를 알려주기위해서 -->
+
+            <ul class="navbar_menu">
+
+            <li>
+                <a href="">관리자</a>
+            </li>
+            <li>
+                <!-- 리스트 내용들이 들어가 있다 -->
+                <a href="../7MakeItem/Admin.html">Make Item List</a>
+            </li>
+            <li>
+                <a href="../3Logout/logout.php">LOGOUT</a>
+            </li>
+            <li>
+                <a href="../6Listpage/NoticeList.php?page=1">Notice</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</div>
+
+
+<div class="logo">
+    <!-- 로고 -->
+    <a href="../1mainpage/mainpage2.html">
+        <img src="../logoimage/logo.png" alt="로고" width="200px"></a>
+</div>
+
+<div class="main_manu_bar">
+    <ul class="navbar_menu_case">
+        <!-- 케이스에 대한 정보들 -->
+
+        <li>
+            <a href="../6Listpage/Listpage.php?menu=1">하드 케이스</a>
+        </li>
+        <li>
+            <a href="../6Listpage/istpage.php?menu=2">젤리 케이스</a>
+        </li>
+        <li>
+            <a href="../6Listpage/Listpage.php?menu=3">투명 하드 케이스</a>
+        </li>
+        <li>
+            <a href="../6Listpage/Listpage.php?menu=4">슬라이드 케이스</a>
+        </li>
+        <li>
+            <a href="../6Listpage/Listpage.php?menu=5">아쿠아 케이스</a>
+        </li>
+
+        <li>
+            <div class="dropdown">
+
+            <a href="">자료실</a>
+            <div class="dropdown-content"  class="dropbtn">
+                <a href="../6Listpage/NoticeList.php?page=1">Notice</a>
+                <a href="#">CHAT</a>
+</div>
+            </div>
+
+        </li>
+    </ul>
+
+</div>
+
+</body>
+</html>

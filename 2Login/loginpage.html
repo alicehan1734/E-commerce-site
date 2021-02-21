@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../1mainpage/mainpage.css">
+        <link rel="stylesheet" href="loginpage.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,900&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap"
+            rel="stylesheet">
+            <script src="loginpage.js"></script>
+
+    </head>
+    <body>
+        <nav class="navbar">
+            <!-- 메뉴에 있는 바를 알려주기위해서 -->
+            <ul class="navbar_menu">
+                <li>
+                    <!-- 리스트 내용들이 들어가 있다 -->
+                    <a href="../2Login/loginpage.html">LOGIN</a>
+                </li>
+                <li>
+                    <a href="../4Signup/signup.html">JOIN US</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="logo">
+            <!-- 로고 -->
+
+            <a href="../1mainpage/mainpage2.html">
+                <img src="../logoimage/logo.png" alt="로고" width="200px"></a>
+        </div>
+
+        <div class="main_manu_bar">
+            <ul class="navbar_menu_case">
+                <!-- 케이스에 대한 정보들 -->
+
+                <li>
+                    <a href="../6Listpage/Listpage.php?menu=1">하드 케이스</a>
+                </li>
+                <li>
+                    <a href="../6Listpage/Listpage.php?menu=2">젤리 케이스</a>
+                </li>
+                <li>
+                    <a href="../6Listpage/Listpage.php?menu=3">투명 하드 케이스</a>
+                </li>
+                <li>
+                    <a href="../6Listpage/Listpage.php?menu=4">슬라이드 케이스</a>
+                </li>
+                <li>
+                    <a href="../6Listpage/Listpage.php?menu=5">아쿠아 케이스</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+    
+                    <a href="">자료실</a>
+                    <div class="dropdown-content"  class="dropbtn">
+                        <a href="#">Notice</a>
+                        <a href="#">Q&A</a>
+        </div>
+                    </div>
+    
+                </li>
+            </ul>
+
+        </div>
+
+        <h2 id="login">LOGIN</h2>
+        <form method="post" action="loginpage.php" id="form" name="formlogin">
+
+        <div class="login_info">
+
+            <input type="text" placeholder="아이디" id="id" name="id">
+            <input type="password" placeholder="비밀번호" id="password" name="password">
+        <div>
+            <input type="button" class="login_button" value="로그인"  onclick="login()";>
+
+        </div>
+    </div>
+
+</form>
+</body>
+</html>

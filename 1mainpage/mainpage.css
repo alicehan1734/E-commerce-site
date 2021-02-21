@@ -1,0 +1,344 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: rgb(240, 234, 240);
+  display: block;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: whitesmoke;
+  padding: 1px 12px;
+  /*패딩 위치가 위아래에는  8px 양옆에는  12px */
+}
+
+.navbar_menu {
+  display: flex;
+  /* 한줄에 하나씩 나오도록 할수있게 한다. */
+  list-style: none;
+  /*리스트의 점을 없애주기 위해서 */
+  padding-left: 0;
+}
+
+.navbar_menu li {
+  /* 메뉴에 있는 리스트 한정*/
+  padding: 5px 12px;
+  /*양옆에는 12px 씩 패딩 주기 */
+  color: black;
+}
+.navbar_menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar_menu li:hover {
+  /* 메뉴에 있는 리스트 가 hover 되었을때 */
+  background-color: thistle;
+  /* 배경 색깔 바꿔준다. */
+  border-radius: 4px;
+  /* 모서리가 둥글게 만들기위해  */
+}
+
+.logo {
+  text-align: center;
+  /* 가운데 정렬   */
+  font-size: 60px;
+  padding: 20px 10px;
+}
+
+.main_manu_bar {
+  background-color: whitesmoke;
+  padding: 5px 10px;
+  font-family: "Poor Story", cursive;
+}
+
+.navbar_menu_case {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  /* 한줄에 하나씩 나오도록 할수있게 한다. */
+  list-style: none;
+  /*리스트의 점을 없애주기 위해서 */
+}
+
+.navbar_menu_case li {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  /* 한줄에 하나씩 나오도록 할수있게 한다. */
+  list-style: none;
+  /*리스트의 점을 없애주기 위해서 */
+  text-align: center;
+  display: inline-block;
+}
+
+.navbar_menu_case a {
+  color: black;
+  text-decoration: none;
+  /*밑줄을 없애고 싶으면 */
+}
+
+.navbar_menu_case li:hover {
+  /* 메뉴에 있는 리스트 가 hover 되었을때 */
+  background-color: thistle;
+  /* 배경 색깔 바꿔준다. */
+  border-radius: 4px;
+  /* 모서리가 둥글게 만들기위해  */
+}
+
+.navbar_menu_case a:hover {
+  color: gray;
+  /*밑줄을 없애고 싶으면 */
+}
+
+.slider {
+  width: 1200px;
+  margin: auto;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.slides {
+  height: 500px;
+  align-items: center;
+  margin: 0;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 1200px;
+  transition: 2s;
+}
+
+.slide img {
+  width: 1200px;
+  height: 500px;
+}
+
+.naviagion-manual {
+  display: flex;
+  margin-top: -40px;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #222222;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+.manual-btn:hover {
+  background-color: #222222;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -1200px;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -2400px;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -3600px;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 430px;
+  width: 1200px;
+}
+
+.navigation-auto div {
+  border: 2px solid #222222;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.navigation-auto div:not(:last-child) {
+  margin-right: 20px;
+}
+
+.slides label {
+  display: none;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #222222;
+}
+
+#radio1:checked ~ .first label {
+  display: block;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #222222;
+}
+
+#radio2:checked ~ .second label {
+  display: block;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #222222;
+}
+
+#radio3:checked ~ .third label {
+  display: block;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #222222;
+}
+#radio4:checked ~ .forth label {
+  display: block;
+}
+
+.slides .manual-btn-left {
+  left: 30px;
+  background: url("../logoimage/left.png") center center / 100% no-repeat;
+}
+.slides .manual-btn-right {
+  right: 30px;
+  background: url("../logoimage/right.png") center center / 100% no-repeat;
+}
+.slide label {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(50%);
+  padding: 30px;
+  cursor: pointer;
+}
+
+.list_wrap {
+  text-align: center; /* 정중앙에 배치하기*/
+}
+.list_wrap ul {
+  font-size: 0;
+  text-align: left; /* 왼쪽에 배치하기*/
+}
+
+.list_wrap li {
+  list-style: none;
+}
+
+.list_wrap a {
+  text-decoration: none; /* 태그에 밑줄을 없애주는 역할을 한다.*/
+  color: #222222;
+}
+
+.list_wrap .item {
+  display: inline-block; /*해당 넓이만큼의 개수를 넣어준다.  */
+  width: 15%; /* 아이템의 넓이 생성하기  */
+  margin-left: 5%; /* 아이템의 마진 넣어주기 */
+  margin-top: 40px;
+  box-shadow: 0px 0px 1px gray; /* y값의 넓이, x 값의 넓이, 그림자의 정도, 그림자 색깔 */
+  background-color: whitesmoke;
+}
+
+.list_wrap .item:nth-child(5n-4) {
+  /* 1 ,6 ,11 의 배수들은 마진을 없애준다. 첫줄의 첫 시작이기에 */
+  margin-left: 0;
+}
+.list_wrap .item:nth-child(-n + 5) {
+  /* 위에 첫줄은 없애준다. 마진을! */
+
+  margin-top: 0;
+}
+.list_wrap .item .image {
+  width: 100%;
+  height: 300px;
+}
+
+.list_wrap .item strong {
+  /* 리스트 아이템의 제목 */
+  display: block;
+  margin: 15px 0px 10px 0;
+  font-size: 16px;
+  letter-spacing: -1px; /* 글자의 간격을 줄어준다. */
+}
+
+.list_wrap .item p {
+  /* 리스트 아이템의 가격 */
+  font-size: 13px;
+  letter-spacing: -1px; /* 글자의 간격을 줄어준다. */
+}
+
+.list_wrap .title_info {
+  padding: 0px 10px;
+}
+
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.popup {
+  position: absolute;
+  left: 5%;
+  top: 25%;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: whitesmoke;
+  transition: all 0.5s;
+  display: none;
+}

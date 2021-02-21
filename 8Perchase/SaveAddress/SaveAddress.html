@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="SaveAddress.css">
+        <script src="SaveAdress.js"></script>
+        <link rel="stylesheet" href="../bill.css">
+
+    </head>
+    <body>
+
+        <script>
+            checkaddress();
+        </script>
+        <div class="body">
+
+            <h2>배송주소록 관리</h2>
+
+            <table  id="customers">
+                <tr>
+                    <th>받으시는 분</th>
+                    <th>주소 (우편번호, 주소, 상세주소)</th>
+                    <th>휴대전화</th>
+                    <th>이메일</th>
+                    <th>배송메시지</th>
+                    <th>배송지관리</th>
+                </tr>
+
+            </table>
+            
+            <div> <!-- pagination 부분-->
+                <ul class="navigationbar" id="navigationbar" >
+                </ul>
+            </div>
+
+            <button onclick="createaddress();" class="minibutton">새로만들기</button>
+        </body>
+    </html>
